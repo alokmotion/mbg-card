@@ -2,15 +2,14 @@ import React, { useRef, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 import PropTypes from "prop-types";
 import digitalMarketing from "../assets/digitalMarketing.png";
-import Award1 from "../assets/Award/Award1.jpeg"
-import Award2 from "../assets/Award/Award2.jpeg"
-import Award3 from "../assets/Award/Award3.jpeg"
-import Award4 from "../assets/Award/Award4.jpeg"
-import Award5 from "../assets/Award/Award5.jpeg"
-import Award6 from "../assets/Award/Award6.jpeg"
-import Award7 from "../assets/Award/Award7.jpeg"
-import Award8 from "../assets/Award/Award8.jpeg"
-
+import Award1 from "../assets/Award/Award1.jpeg";
+import Award2 from "../assets/Award/Award2.jpeg";
+import Award3 from "../assets/Award/Award3.jpeg";
+import Award4 from "../assets/Award/Award4.jpeg";
+import Award5 from "../assets/Award/Award5.jpeg";
+import Award6 from "../assets/Award/Award6.jpeg";
+import Award7 from "../assets/Award/Award7.jpeg";
+import Award8 from "../assets/Award/Award8.jpeg";
 
 const WrapperContainer = styled.div`
   height: 100%;
@@ -115,7 +114,7 @@ const Marquee = ({ images, time, toRight, ...props }) => {
         {showImages.map((image, index) => {
           return (
             <MarqueeItem key={index}>
-              <article class="w-[400px] h-[450px] relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24">
+              <article class="w-[400px] h-[450px] relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-20">
                 <img
                   src={image}
                   alt="University of Southern California"
@@ -123,7 +122,6 @@ const Marquee = ({ images, time, toRight, ...props }) => {
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
                 <h3 class="z-10 mt-3 text-3xl font-bold text-white">MBG</h3>
-               
               </article>
             </MarqueeItem>
           );
@@ -165,7 +163,7 @@ function Awards() {
     Award8,
     Award1,
     Award2,
-    Award3, 
+    Award3,
     Award4,
     Award5,
     Award6,
@@ -183,7 +181,7 @@ function Awards() {
 
   return (
     <div className="flex-col justify-center p-6 text-center ">
-      <h1 className="text-4xl font-bold leading-tight sm:text-5xl mb-3">
+      <h1 className=" underline  mb-3 font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl ">
         {" "}
         Awards{" "}
       </h1>

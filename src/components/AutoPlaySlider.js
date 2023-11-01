@@ -7,7 +7,7 @@ const AutoPlaySlider = () => {
 
     <section className="  px-4 space-y-6 h-screen bg-slate-50 py-4 dark:bg-transparent md:py-12 lg:py-[3rem]">
     <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-      <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl mb-20">
+    <h2 className="font-bold underline text-3xl leading-[1.1] sm:text-3xl md:text-6xl mb-20">
         We Featured In
       </h2>
     </div>

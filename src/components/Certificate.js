@@ -6,10 +6,10 @@ const Certificate = () => {
   return (
     <>
       <div class="container h-screen relative flex flex-col   max-w-6xl px-10 mx-auto xl:px-0 mt-12">
-        <h2 class="mb-12 text-4xl font-extrabold text-center leading-tight text-gray-900">
+        <h2 class="mb-12  text-center  text-gray-900 font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl ">
           Government Funded Certificate
         </h2>
-        <p class="mb-3 text-lg text-center text-gray-500">
+        <p class="mb-3 text-lg  flex justify-between text-gray-500">
           MBG CARD proudly showcases its Government of India-funded
           certificates, exemplifying our commitment to India's digital
           transformation. The first certificate, backed by a substantial

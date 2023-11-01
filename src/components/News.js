@@ -6,7 +6,7 @@ import NewsVid3 from "../assets/News/NewsVid3.mp4";
 const News = () => {
   return (
     <div className="min-[1024px]:h-[100vh] w-screen flex-col justify-center p- text-center  max-[398px]:w-[100%]  ] ">
-      <h1 className="  font-semibold font-sans	 text-3xl	 leading-10	 mb-10 w-screen text-[#1d1d1d] ">
+      <h1 className="  underline font-sans	 	 mb-10 w-screen text-[#1d1d1d] font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl  ">
         {" "}
         We are in news{" "}
       </h1>

@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import PropTypes from "prop-types";
-import Test1 from "../assets/VideoTest/Test1.mp4"
-import Test2 from "../assets/VideoTest/Test2.mp4"
+import Test1 from "../assets/VideoTest/Test1.mp4";
+import Test2 from "../assets/VideoTest/Test2.mp4";
 
 const WrapperContainer = styled.div`
   height: 100%;
@@ -29,7 +29,7 @@ const MarqueeContainer = styled.div`
   margin-top: 20px;
   padding: 10px 0;
   background-color: #f5f6e0;
-  overflow: hidden;
+  // overflow: hidden;
   &:hover {
     animation-play-state: paused;
   }
@@ -89,7 +89,10 @@ const Marquee = ({ videos, time, toRight, ...props }) => {
         {showVideos.map((video, index) => {
           return (
             <MarqueeItem key={index}>
-              <video width="280" height="200" controls
+              <video
+                width="280"
+                height="0"
+                controls
                 onPlay={() => {
                   // Video is playing, pause the marquee
                   marqueeContainer.current.style.animationPlayState = "paused";
@@ -125,19 +128,17 @@ Marquee.defaultProps = {
 
 function VideoTest() {
   // Example video URLs
-  const VIDEO_LIST = [
-   Test1,
-   Test2,
-   
-  ];
+  const VIDEO_LIST = [Test1, Test2, Test1, Test2, Test1, Test2];
 
   return (
     <Wrapper>
-        <div className="mx-auto flex max-w-[58rem] h-screen flex-col items-center space-y-5 text-center">
-        <h2 className="font-bold text-2xl mt-4">
-          Super Happy Customer  😍
+      <div className="mx-auto flex max-w-[58rem] h-screen flex-col items-center space-y-5 text-center">
+        <h2 className="font-bold text-2xl mt-5  leading-[1.1] sm:text-3xl md:text-6xl  ">
+          Super Happy Customer 😍
         </h2>
-      <Marquee   videos={VIDEO_LIST} time={15}  />
+        <div className="h-[236px]">
+        <Marquee  videos={VIDEO_LIST} time={15} />
+        </div>
       </div>
     </Wrapper>
   );

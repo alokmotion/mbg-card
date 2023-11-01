@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const ContactUs = () => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <div className="flex-col justify-center p-6 text-center ">
+    <div className="flex-col justify-center p-6 text-center mt-10 ">
       <h1 className="text-4xl font-bold leading-tight sm:text-5xl mb-12">
         {" "}
         Contact Us{" "}
@@ -38,9 +38,8 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-
         <div class="flex px-3 py-3">
-          <div class="max-w-[20rem] rounded overflow-hidden shadow-lg">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
             <img
               class="w-full"
               src="https://cdn.sanity.io/images/599r6htc/localized/71996e35922661352d07c5c52266345f5b505ed6-1920x1312.png?w=480&h=328&q=75&fit=max&auto=format&dpr=2"

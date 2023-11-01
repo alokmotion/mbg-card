@@ -8,17 +8,97 @@ import gAds from "../assets/gAds.jpg";
 import localMapSearch from "../assets/localMapSearch.jpg";
 import navigation from "../assets/navigation.png";
 import chatgpt from "../assets/chatgpt.png";
+import instaAuto from "../assets/instaAuto.png";
 
 const Services = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div class="text-center p-10 bg-[#d0effc] ">
-      <h1 class="font-bold text-4xl mb-10">Services</h1>
+    <div class="text-center p-10 bg-[#d0effc] max-[448px]:w-[107%] ">
+      <h1 class=" mb-10 font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl ">
+        Services
+      </h1>
 
       {/* card for larger size */}
       <div class="w-fit bg-[#d0effc] p-3    mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
         {/* card 1 */}
+        <div className="  relative flex w-full max-w-[24rem] lg:max-w-[33rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md max-[780px]:flex-col max-[780px]:justify-center max-[780px]:items-center">
+          <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+            <div className="flex justify-center items-center h-full">
+              <img
+                src="https://pickyassist.com/en/img/facebook-leads/banner-img.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div className="p-2 ">
+            <div className="p-6 rounded-lg text-start ">
+              <h6 className="mb-4 block font-sans font-semibold text-2xl leading-relaxed tracking-normal text-start text-pink-500 antialiased">
+                Facebook Automation
+              </h6>
+              <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-start text-black antialiased">
+                Schedule Your Service in advanced With Us And Get It Done In
+                Time.
+              </p>
+              <div to="/servicing" className="inline-block" href="#">
+                <a
+                  href="#_"
+                  class="relative inline-block text-lg group items-baseline	 "
+                  onClick={() => setShowModal(true)}
+                >
+                  <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+                    <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                    <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+                    <span class="relative">Book Now</span>
+                  </span>
+                  <span
+                    class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+                    data-rounded="rounded-lg"
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* card */}
+        {/* card 1 */}
+        <div className="  relative flex w-full max-w-[24rem] lg:max-w-[33rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md max-[780px]:flex-col max-[780px]:justify-center max-[780px]:items-center">
+          <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+            <div className="flex justify-center items-center h-full">
+              <img src={instaAuto} alt="" srcset="" />
+            </div>
+          </div>
+          <div className="p-2 ">
+            <div className="p-6 rounded-lg text-start ">
+              <h6 className="mb-4 block font-sans font-semibold text-2xl leading-relaxed tracking-normal text-start text-pink-500 antialiased">
+                Instagram Automation
+              </h6>
+              <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-start text-black antialiased">
+                Schedule Your Service in advanced With Us And Get It Done In
+                Time.
+              </p>
+              <div to="/servicing" className="inline-block" href="#">
+                <a
+                  href="#_"
+                  class="relative inline-block text-lg group items-baseline	 "
+                  onClick={() => setShowModal(true)}
+                >
+                  <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+                    <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                    <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+                    <span class="relative">Book Now</span>
+                  </span>
+                  <span
+                    class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+                    data-rounded="rounded-lg"
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* card */} {/* card 1 */}
         <div className="  relative flex w-full max-w-[24rem] lg:max-w-[33rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md max-[780px]:flex-col max-[780px]:justify-center max-[780px]:items-center">
           <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
             <div className="flex justify-center items-center h-full">
@@ -32,7 +112,7 @@ const Services = () => {
           <div className="p-2 ">
             <div className="p-6 rounded-lg text-start ">
               <h6 className="mb-4 block font-sans font-semibold text-2xl leading-relaxed tracking-normal text-start text-pink-500 antialiased">
-                Whatsapp Marketing
+                Whatsapp Automation
               </h6>
               <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-start text-black antialiased">
                 Schedule Your Service in advanced With Us And Get It Done In
@@ -212,7 +292,7 @@ const Services = () => {
           <div className="p-2">
             <div className="p-6 rounded-lg text-start ">
               <h6 className="mb-4 block font-sans font-semibold text-2xl leading-relaxed tracking-normal text-pink-500 antialiased">
-                Website Development
+              Creative design
               </h6>
               <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-black antialiased">
                 Schedule Your Service in advanced With Us And Get It Done In
