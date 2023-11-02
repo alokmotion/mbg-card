@@ -1,12 +1,7 @@
-import React,{useState} from "react";
-
-
-
-
+import React, { useState } from "react";
 
 function Navbar() {
-  
-const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <nav className=" max-[398px]:w-[max-content]  max-[398px]:gap-[15px]  flex flex-wrap items-center justify-between p-3 px-12 bg-[white] first-line:bg-white bg-opacity-5  shadow-lg ">
@@ -51,11 +46,14 @@ const [showModal, setShowModal] = useState(false);
           Contact Us
         </a>
       </div>
-      <button class="group relative h-12 w-48 overflow-hidden rounded-lg bg-[#2563eb] text-lg shadow"
-      onClick={() => setShowModal(true)}
+      <button
+        class="group relative h-12 w-48 overflow-hidden rounded-lg bg-[#2563eb] text-lg shadow"
+        onClick={() => setShowModal(true)}
       >
         <div class="absolute inset-0 w-3 bg-amber-400 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-        <span class="relative text-[white] group-hover:text-white   " >Demo</span>
+        <span class="relative text-[white] group-hover:text-white   ">
+          Demo
+        </span>
       </button>
 
       {showModal ? (
@@ -80,11 +78,9 @@ const [showModal, setShowModal] = useState(false);
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
-
                   <div class="flex justify-center  px-8  text-blueGray-500 text-lg leading-relaxed ">
                     <form class="max-w-2xl">
                       <div class="flex flex-wrap border shadow rounded-lg p-3 dark:bg-gray-600">
-                     
                         <div class="flex flex-col gap-2 w-full border-gray-400">
                           <div>
                             <label class="text-gray-600 dark:text-gray-400">
@@ -106,8 +102,6 @@ const [showModal, setShowModal] = useState(false);
                             />
                           </div>
 
-
-
                           <div>
                             <label class="text-gray-600 dark:text-gray-400">
                               Email
@@ -127,9 +121,7 @@ const [showModal, setShowModal] = useState(false);
                               name="bio"
                             ></textarea>
                           </div>
-                          <div class="flex justify-end">
-                           
-                          </div>
+                          <div class="flex justify-end"></div>
                         </div>
                       </div>
                     </form>
@@ -158,10 +150,6 @@ const [showModal, setShowModal] = useState(false);
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null}
-
-
-
-
     </nav>
   );
 }

@@ -137,7 +137,7 @@ function VideoTest() {
           Super Happy Customer 😍
         </h2>
         <div className="h-[236px]">
-        <Marquee  videos={VIDEO_LIST} time={15} />
+          <Marquee videos={VIDEO_LIST} time={15} />
         </div>
       </div>
     </Wrapper>
